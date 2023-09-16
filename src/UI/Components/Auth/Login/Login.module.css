@@ -1,0 +1,140 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.loginContainer {
+    width: 100%;
+    height: calc(100vh - 123px);
+    /* background-color: red; */
+    /* max-width: 1440px; */
+    display: flex;
+}
+
+.loginFormContainer {
+    width: 40%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    padding-top: 32px;
+}
+
+.loginFormContainer h3 {
+    color: var(--main-color);
+    font-size: 50px;
+    font-variation-settings: 'wght' 700 , 'wdth' 75;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input{
+    border: solid 1px #B7B7B7;
+    width: 399px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #A6A6A6;
+}
+
+.errorInput{
+    border: solid 1px #D49F9F;
+    width: 399px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.errorMessage{
+    width: 399px;
+    padding-left: 18px;
+    display: flex;
+    justify-content: start;
+    color: #D49F9F;
+    font-size: 10px;
+}
+
+.btn {
+    height: 53px;
+    width: 399px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px 0;
+    background-color: #FD5900;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer {
+    width: 399px;
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+}
+
+.registerLink {
+    color: #FD6E20;
+    font-size: 15px;
+    font-variation-settings: 'wght' 350 , 'wdth' 88;
+    border-bottom: solid #FD6E20 1px;
+}
+
+.recoverLink {
+color: #B7B7B7;
+    font-size: 15px;
+    font-variation-settings: 'wght' 350 , 'wdth' 88;
+    border-bottom: solid #B7B7B7 1px;
+}
+
+
+.customIconShowPass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.customIconShowPass :nth-child(2){
+    position: relative;
+    right: 16px;
+}
+@media screen and (max-width: 760px) {
+    .errorInput, .input, .btn {
+        width: 310px;
+    }
+    .footer {
+        width: 310px;
+        height: 14px;
+    }
+.recoverLink{
+    font-size: 13px;
+    white-space: nowrap;
+}
+.registerLink{
+    font-size: 13px;
+    white-space: nowrap;
+}
+    .errorMessage{
+        width: 310px;
+        padding-left: 18px;
+    }
+    .btn{
+        font-size: 26px;
+    }
+}

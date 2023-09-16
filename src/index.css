@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'custom';
+    src: url("/src/font/Bahnschrift.ttf") format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'custom';
+    font-variation-settings: 'wght' 400 , 'wdth' 75;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --text-color : #fff;
+    --main-color: #FD5900;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
